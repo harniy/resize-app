@@ -1,0 +1,27 @@
+@media (max-width: 450px) {
+    .drug_area {
+        width: 80% !important;
+    }
+
+    .head_block a {
+        float: none !important;
+    }
+
+    .crope_image img { 
+        width: 80%;
+    }
+
+    .modal_wrapper img {
+        width: 100%;
+    }
+
+    .crope_image {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .modal_wrapper {
+        width: 90% !important;
+        height: 570px !important;
+    }
+}
