@@ -32,7 +32,7 @@
       <button class="material-button" @click="resizeImage">применить</button>
       <a :href="saveImage" class="material-button" download v-if="isResize">Сохранить</a>
       <h3>Настройки изображения</h3>
-      <ul>
+      <ul class="inputs-list">
         <li>
           <p>ширина : {{ imgWidth }}</p>
           <input type="number" class="customSize" v-model="imgWidth" />
@@ -131,7 +131,8 @@ export default {
 </script>
 
 
-<style>
+<style >
+
 p {
   font-size: 20px;
   letter-spacing: 1.7px;
@@ -227,5 +228,11 @@ a.material-button {
 }
 img#out {
     max-width: 95%;
+}
+
+@media screen and (max-width: 450px) {
+  .inputs-list {
+    flex-direction: column;
+  }
 }
 </style>
